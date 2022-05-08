@@ -1,0 +1,31 @@
+#-
+#  url: http://www.baidu.com
+##  txt: python
+#  input:
+##    txt: python
+#    by: id
+#    value: kw
+#  button:
+#    by: id
+#    value: su
+#  txt: python
+##-
+##  url: http://www.baidu.com
+##  txt: java
+
+# 【锚点& 引用*机制】  便于数据维护，多用于复杂的数据结构中
+- common: &defaults      # 把公共部分提取出来，作为公共变量
+    url: http://www.baidu.com
+    input:
+      by: id
+      value: kw
+    button:
+      by: id
+      value: su
+  txt: python
+- common:
+    <<: *defaults      # 引用公共部分的值
+  txt: java      # 把不同的内容提取出来
+- common:
+    <<: *defaults
+  txt: PHP
