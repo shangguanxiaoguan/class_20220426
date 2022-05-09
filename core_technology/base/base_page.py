@@ -6,7 +6,7 @@ from selenium import webdriver
 
 class BasePage:
     # 临时driver定义
-    driver = webdriver.Chrome()
+    # driver = webdriver.Chrome()
 
     # 构造函数
     def __init__(self, driver):
@@ -27,7 +27,7 @@ class BasePage:
 
     # 点击
     def click(self, by, value):
-        self.locate(by, value).send_keys()
+        self.locate(by, value).click()
 
     # 关闭
     def quit(self):
