@@ -1,0 +1,6 @@
+-
+  url: http://127.0.0.1:5000/api/login
+  data:
+    username: admin
+    password: '12345'
+  expected: 'success'

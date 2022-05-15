@@ -9,8 +9,8 @@ import openpyxl
 from excel_demo.keys_excel.ui_keys import Keys
 
 
-def run(file):
-    excel = openpyxl.load_workbook(file)
+def read(filepath):
+    excel = openpyxl.load_workbook(filepath)
 
     # 获取指定的sheet页
     # sheet = excel['Sheet1']
@@ -41,8 +41,6 @@ def run(file):
                 if values[1] == 'open_browser':
                     key = Keys(**data)
                     print("key--->" + str(key))
-                # elif 'assert' in values[1]:
-                #     status = getattr()
                 else:
                     getattr(key, values[1])(**data)    # 反射机制
                 # print('*' * 20)

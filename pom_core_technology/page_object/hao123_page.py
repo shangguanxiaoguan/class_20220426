@@ -1,4 +1,4 @@
-from core_technology.base.base_page import BasePage
+from pom_core_technology.base.base_page import BasePage
 
 
 class Hao123Page(BasePage):
@@ -6,7 +6,7 @@ class Hao123Page(BasePage):
     # url = 'https://www.hao123.com/?src=from_pc'
     url = 'https://www.jd.com/'
     # 关键元素
-    link = ('link text', 'hao123推荐')
+    link = ('link text', '免费注册')
 
     # 核心业务
     def click_hao(self):

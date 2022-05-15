@@ -1,7 +1,7 @@
 from selenium import webdriver
 
-from core_technology.base.base_page import BasePage
-from core_technology.page_object.hao123_page import Hao123Page
+from pom_core_technology.base.base_page import BasePage
+from pom_core_technology.page_object.hao123_page import Hao123Page
 
 """
     函数调用时使用*和 ** ：
@@ -29,11 +29,11 @@ class SearchPage(BasePage):
     def search(self, txt):
         self.open(self.url)
         self.input(*self.input_el, txt)
-        self.wait(3)
+        # self.wait(3)
         # print("----开始点击-----")
         self.click(*self.button_el)
         # print('----点击结束-----')
-        self.wait(5)
+        # self.wait(5)
         # self.quit()
 
 
