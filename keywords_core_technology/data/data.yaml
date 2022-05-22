@@ -1,0 +1,11 @@
+-
+  type: Chrome
+  url: http://www.baidu.com
+  input:
+    name: id
+    value: kw
+    txt: java
+  click:
+    name: id
+    value: su
+  wait: 3

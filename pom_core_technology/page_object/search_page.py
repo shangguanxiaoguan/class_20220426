@@ -37,7 +37,6 @@ class SearchPage(BasePage):
         # self.quit()
 
 
-
 if __name__ == '__main__':
     driver = webdriver.Chrome()
     sp = SearchPage(driver)
